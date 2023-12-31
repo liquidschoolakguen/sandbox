@@ -1,0 +1,67 @@
+.toDoContainer {
+  height: 600px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: #ecf0f1;
+  padding: 1rem;
+}
+
+.iconContainer {
+  display: flex;
+  gap: 0.5rem;
+
+  svg {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.list {
+  margin: 1rem 0;
+  overflow-y: scroll;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  height: 30px;
+  width: 30px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.input {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 30px;
+  padding: 0 0.5rem;
+}
+
+.inputContainer {
+  width: 100%;
+  gap: 10px;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.todoItem {
+  height: 20px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 2rem;
+  border: 1px solid #bad1e6;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
